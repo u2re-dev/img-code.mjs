@@ -13,6 +13,8 @@
     <script>
         (async()=>{
             const ab = await (await fetch("img/test.jng"))?.arrayBuffer?.();
+            //const ab = await (await fetch("extra/man/TCBA8S.jng"))?.arrayBuffer?.();
+
             const md = await import("./lib/jng.min.mjs");
             const img = await md.decodeJNG(ab);
             document.querySelector("img").src = URL.createObjectURL(img);
