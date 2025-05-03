@@ -1,6 +1,7 @@
 (module
-  (memory (export "memory") 16 8192)
-  (func (export "merge_alpha")
+  ;;(memory (export "memory") 16 8192)
+  (import "env" "memory" (memory 1))
+  (func (export "mac")
     (param $dst i32)      ;; куда писать RGBA
     (param $src_rgbx i32) ;; откуда брать RGBX
     (param $src_axxx i32) ;; откуда брать AXXX
