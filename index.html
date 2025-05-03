@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <img alt="JNG" src="img/test.jng"/>
+    <img alt="PNG" src="img/test.png"/>
+
+    <script>
+        (async()=>{
+            const ab = await (await fetch("img/test.jng"))?.arrayBuffer?.();
+            const md = await import("./lib/jng.min.mjs");
+            const img = await md.decodeJNG(ab);
+            document.querySelector("img").src = URL.createObjectURL(img);
+        })();
+    </script>
+
+</body>
+</html>
