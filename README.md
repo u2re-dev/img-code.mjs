@@ -1,2 +1,4 @@
-# nano-jng.mjs
-Most smallest and fastest decoder of JNG format in Web Browsers... (4kb)
+# My image formats codec packs
+
+- [JNG-nano](./JNG-nano/)
+- [JXL-wasm-f32](./JNG-wasm-f32/)
