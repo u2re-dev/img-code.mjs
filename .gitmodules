@@ -1,3 +1,6 @@
 [submodule "libjxl"]
 	path = libjxl
 	url = https://github.com/libjxl/libjxl
+[submodule "emsdk"]
+	path = emsdk
+	url = https://github.com/emscripten-core/emsdk
